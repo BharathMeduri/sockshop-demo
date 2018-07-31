@@ -13,6 +13,14 @@ We'd love to see community contributions. We like to keep it simple and use Gith
 
 Checkout the API Spec [here](http://microservices-demo.github.io/api/index?url=https://raw.githubusercontent.com/microservices-demo/user/master/apispec/user.json)
 
+## Prerequisites
+1. Use go-chassis 1.1.0 release
+2. download below dependancies
+  ```
+  go get gopkg.in/mgo.v2
+  go get gopkg.in/mgo.v2/bson
+  ```
+
 >## Build
 
 ### Using Go natively
