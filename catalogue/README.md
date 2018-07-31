@@ -19,10 +19,12 @@ Checkout the API Spec [here](http://microservices-demo.github.io/api/index?url=h
 
 ### To build this service
 
-#### Dependencies
+## Prerequisites
+1. Use go-chassis 1.1.0 release
+2. download below dependancies
 ```
-go get -u github.com/FiloSottile/gvt
-gvt restore
+go get github.com/go-sql-driver/mysql
+go get github.com/jmoiron/sqlx
 ```
 
 #### Go tools
