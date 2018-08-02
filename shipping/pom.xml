@@ -11,18 +11,18 @@
 	<name>shipping</name>
 	<description>Shipping service for microservices-demo application</description>
 
-    <parent>
-        <artifactId>sockshop-parent</artifactId>
-        <groupId>sockshop</groupId>
-        <version>2.0.0-SNAPSHOT</version>
-    </parent>
+	<parent>
+		<artifactId>sockshop-parent</artifactId>
+		<groupId>sockshop</groupId>
+		<version>2.0.0-SNAPSHOT</version>
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<prometheus.version>0.0.21</prometheus.version>
 	</properties>
-	
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -43,16 +43,11 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-	<dependencies>		
+
+	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.servicecomb</groupId>
+			<groupId>org.apache.servicecomb</groupId>
 			<artifactId>spring-boot-starter-provider</artifactId>
-			<version>${servicecomb.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.prometheus</groupId>
@@ -69,16 +64,16 @@
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 		<dependency>
-    		<groupId>org.springframework</groupId>
-    		<artifactId>spring-test</artifactId>
-    		<version>4.3.2.RELEASE</version>
-    		<scope>test</scope>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.2.RELEASE</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-    		<groupId>junit</groupId>
-    		<artifactId>junit</artifactId>
-    		<version>4.11</version>
-    		<scope>test</scope>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.openpojo</groupId>
@@ -86,7 +81,11 @@
 			<version>0.8.4</version>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>joda-time</groupId>
@@ -107,6 +106,26 @@
 			<groupId>java-sdk-core</groupId>
 			<artifactId>java-sdk-core</artifactId>
 			<version>2.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>foundation-auth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.servicecomb</groupId>
+			<artifactId>config-cc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>cse-handler-tracing</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>cse-handler-performance-stats</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>cse-handler-cloud-extension</artifactId>
 		</dependency>
 	</dependencies>
 

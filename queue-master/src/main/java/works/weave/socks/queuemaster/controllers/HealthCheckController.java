@@ -2,7 +2,7 @@ package works.weave.socks.queuemaster.controllers;
 
 import com.rabbitmq.client.Channel;
 
-import io.servicecomb.provider.rest.common.RestSchema;
+import org.apache.servicecomb.provider.rest.common.RestSchema;
 
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.rabbit.core.ChannelCallback;

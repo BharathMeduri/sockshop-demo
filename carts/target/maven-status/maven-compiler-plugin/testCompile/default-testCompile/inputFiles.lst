@@ -1,0 +1,10 @@
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/item/UnitFoundItem.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/controllers/UnitItemsController.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/controllers/UnitHealthCheckController.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/controllers/UnitCartsController.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/action/UnitFirstResultOrDefault.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/cart/UnitCartResource.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/repositories/ITItemRepository.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/repositories/ITCartRepository.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/item/UnitItemResource.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/carts/src/test/java/works/weave/socks/cart/cart/UnitCartContentsResource.java

@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import io.servicecomb.provider.rest.common.RestSchema;
+import org.apache.servicecomb.provider.rest.common.RestSchema;
 import works.weave.socks.cart.cart.CartDAO;
 import works.weave.socks.cart.cart.CartResource;
 import works.weave.socks.cart.entities.Item;

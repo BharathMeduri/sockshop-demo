@@ -2,7 +2,7 @@ APPLICATION_ID: sockshop
 service_description:
   name: orders
   version: 0.0.1
-cse:
+servicecomb:
   service:
     registry:
       address: https://${SC_HOST}
@@ -16,6 +16,7 @@ cse:
   monitor:
     client:
       serverUri: https://${SC_HOST}
+#please remove the ak/sk in public cloud deployment
   credentials:
     accessKey: ${AK_KEY}
     secretKey: ${SK_KEY}
@@ -41,6 +42,3 @@ cse:
     payment: 
       version-rule: 0.0.1+ 
       transport: rest
-ssl.sc.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud
-ssl.apiserver.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud
-ssl.monitor.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud    

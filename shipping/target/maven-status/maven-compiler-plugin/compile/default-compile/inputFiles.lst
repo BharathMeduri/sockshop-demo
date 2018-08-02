@@ -1,0 +1,11 @@
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/access/AccessServiceImplShipping.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/entities/HealthCheck.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/entities/Shipment.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/access/AccessServiceShipping.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/access/AccessServiceUtilsShipping.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/Constants.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/configuration/RabbitMqConfiguration.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/ShippingServiceApplication.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/ResponseMessage.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/ShippingController.java
+/home/root1/MaheshRaju/Code/sockshop-migrate/code-merge/sockshop-demo/shipping/src/main/java/works/weave/socks/shipping/controllers/ApiUtils.java

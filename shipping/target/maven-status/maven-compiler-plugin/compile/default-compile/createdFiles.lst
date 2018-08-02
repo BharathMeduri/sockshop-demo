@@ -1,0 +1,13 @@
+works/weave/socks/shipping/controllers/access/AccessServiceImplShipping.class
+works/weave/socks/shipping/controllers/ShippingController.class
+works/weave/socks/shipping/controllers/Constants.class
+works/weave/socks/shipping/entities/Shipment.class
+works/weave/socks/shipping/configuration/RabbitMqConfiguration.class
+works/weave/socks/shipping/entities/HealthCheck.class
+works/weave/socks/shipping/controllers/ShippingController$1.class
+works/weave/socks/shipping/controllers/ShippingController$1$1.class
+works/weave/socks/shipping/ShippingServiceApplication.class
+works/weave/socks/shipping/controllers/access/AccessServiceUtilsShipping.class
+works/weave/socks/shipping/controllers/ResponseMessage.class
+works/weave/socks/shipping/controllers/access/AccessServiceShipping.class
+works/weave/socks/shipping/controllers/ApiUtils.class

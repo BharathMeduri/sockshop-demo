@@ -4,18 +4,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.servicecomb</groupId>
+	<groupId>org.apache.servicecomb</groupId>
 	<artifactId>orders</artifactId>
 	<packaging>jar</packaging>
 
 	<name>orders</name>
 	<description>Orders service for microservices-demo application</description>
 
-    <parent>
-        <artifactId>sockshop-parent</artifactId>
-        <groupId>sockshop</groupId>
-        <version>2.0.0-SNAPSHOT</version>
-    </parent>
+	<parent>
+		<artifactId>sockshop-parent</artifactId>
+		<groupId>sockshop</groupId>
+		<version>2.0.0-SNAPSHOT</version>
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,7 +39,7 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
-				<version>1.4.4.RELEASE</version>
+				<version>1.5.12.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -51,10 +51,9 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-        <dependency>
-			<groupId>io.servicecomb</groupId>
+		<dependency>
+			<groupId>org.apache.servicecomb</groupId>
 			<artifactId>spring-boot-starter-provider</artifactId>
-			<version>${servicecomb.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -115,7 +114,27 @@
 			<scope>test</scope>
 		</dependency>
 
-
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>foundation-auth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.servicecomb</groupId>
+			<artifactId>config-cc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>cse-handler-tracing</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>cse-handler-performance-stats</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.huawei.paas.cse</groupId>
+			<artifactId>cse-handler-cloud-extension</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

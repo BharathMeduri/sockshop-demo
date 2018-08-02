@@ -4,19 +4,19 @@ inputs:
   image-frontend:
     default: "100.125.0.198:20202/hwcse/sockshop-frontend:latest"
   image-orders:
-    default: "100.125.0.198:20202/hwcse/sockshop-orders:latest"
+    default: "100.125.0.198:20202/hwcse/sockshop-orders:1.1.0"
   image-payment:
-    default: "100.125.0.198:20202/hwcse/sockshop-payment:latest"
+    default: "100.125.0.198:20202/hwcse/sockshop-payment:go1.8"
   image-user:
-    default: "100.125.0.198:20202/hwcse/sockshop-user:latest"
+    default: "100.125.0.198:20202/hwcse/sockshop-user:go1.8"
   image-carts:
-    default: "100.125.0.198:20202/hwcse/sockshop-carts:latest"
+    default: "100.125.0.198:20202/hwcse/sockshop-carts:1.1.0"
   image-shippingv1:
-    default: "100.125.0.198:20202/hwcse/sockshop-shipping:latest"
+    default: "100.125.0.198:20202/hwcse/sockshop-shipping:1.1.0"
   image-catalogue:
-    default: "100.125.0.198:20202/hwcse/sockshop-catalogue:latest"
+    default: "100.125.0.198:20202/hwcse/sockshop-catalogue:go1.8"
   image-servmesh:
-    default: "100.125.0.198:20202/hwcse/cse-mesher:mesher_release"
+    default: "100.125.0.198:20202/hwcse/cse-mesher:1.4.12"
   image-mongodb-orders:
     default: "100.125.0.198:20202/hwcse/sockshop-mongodb:0.0.1"
   image-mongodb-users:
@@ -46,9 +46,9 @@ inputs:
   servmesher_name:
      default: "servmesher"
   cse_reg_addr:
-    default: "https://cse.cn-north-1.myhwclouds.com:443"
+    default: "https://cse.cn-north-1.myhuaweicloud.com:443"
   cse_center_addr:
-    default: "https://cse.cn-north-1.myhwclouds.com:443"
+    default: "https://cse.cn-north-1.myhuaweicloud.com:443"
   servicenameforfrontend:
     default: "frontend"
   servicenameforuser:
@@ -100,23 +100,13 @@ inputs:
   chassis_env:
     default: "production"
   sc_host:
-    default: "cse.cn-north-1.myhwclouds.com:443"
+    default: "cse.cn-north-1.myhuaweicloud.com:443"
   cse_service_reg_enable:
     default: "true"
   dms_host:
-    default: "dms.cn-north-1.myhwclouds.com/v1.0/"
+    default: "dms.cn-north-1.myhuaweicloud.com/v1.0/"
   dms_region:
     default: "cn-north-1"
-  dms_ak:
-    default: "ak_value"
-  dms_sk:
-    default: "sk_value"
-  dms_projectid:
-    default: "pid"
-  ak_key:
-    default: "ak_value"
-  sk_key:
-    default: "sk_value"
 
 node_templates:
   cse-localtime-volume:
@@ -138,8 +128,8 @@ node_templates:
       configMapSpec:
         - name: auth.yaml
           value: |
-            cse.credentials.accessKey: ak_value
-            cse.credentials.secretKey: sk_value
+            cse.credentials.accessKey: 
+            cse.credentials.secretKey: 
       createNew: true
 
   configmapvolumechassis:
@@ -158,8 +148,8 @@ node_templates:
             
             cse:
               credentials:
-                accessKey: ak_value
-                secretKey: sk_value
+                accessKey: 
+                secretKey: 
               loadbalance:
                 strategyName: RoundRobin
                 retryEnabled: false
@@ -377,10 +367,6 @@ node_templates:
             value: { get_input: orders-db }
           - name: "SC_HOST"
             value: { get_input: sc_host }
-          - name: "AK_KEY"
-            value: { get_input: ak_key }
-          - name: "SK_KEY"
-            value: { get_input: sk_key }
           - name: "http_timeout"
             value: { get_input: timeout }
           - name: "http_proxy"
@@ -426,10 +412,6 @@ node_templates:
       package:
         image: { get_input: image-shippingv1 }
         env:
-          - name: "AK_KEY"
-            value: { get_input: ak_key }
-          - name: "SK_KEY"
-            value: { get_input: sk_key }
           - name: "JAVA_OPTS"
             value: { get_input: java-options }
           - name: "SC_HOST"
@@ -438,12 +420,6 @@ node_templates:
             value: { get_input: dms_host}
           - name: "DMS_REGION"
             value: { get_input: dms_region}
-          - name: "DMS_AK"
-            value: { get_input: dms_ak}
-          - name: "DMS_SK"
-            value: { get_input: dms_sk}
-          - name: "DMS_PROJECTID"
-            value: { get_input: dms_projectid}
         serviceSpec:
           type: ClusterIP
           ports:
@@ -503,10 +479,6 @@ node_templates:
         env:
           - name: "SC_HOST"
             value: { get_input: sc_host }
-          - name: "AK_KEY"
-            value: { get_input: ak_key }
-          - name: "SK_KEY"
-            value: { get_input: sk_key }
           - name: "JAVA_OPTS"
             value: { get_input: java-options }
           - name: "MONGODB_CARTS_SERVICE_HOST"

@@ -3,7 +3,7 @@ package works.weave.socks.shipping.controllers;
 import com.netflix.config.DynamicPropertyFactory;
 import com.rabbitmq.client.Channel;
 
-import io.servicecomb.provider.rest.common.RestSchema;
+import org.apache.servicecomb.provider.rest.common.RestSchema;
 
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.rabbit.core.ChannelCallback;
